@@ -34,6 +34,8 @@ public class Comunicacion extends Observable implements Runnable {
 
     String text="";
 
+    //Nuevo comentario: prueba de github
+
     private Comunicacion(){
 
         socket = null;

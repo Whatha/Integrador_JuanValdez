@@ -47,9 +47,8 @@ import java.util.Observer;
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_main);
+            setContentView(R.layout.content_main);
 
-            prueba=(TextView)findViewById(R.id.juan);
             nombre=(EditText)findViewById(R.id.user);
             pass=(EditText)findViewById(R.id.pass);
 

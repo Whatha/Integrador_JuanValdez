@@ -44,7 +44,7 @@ public class Registrarse extends Activity {
         });
 
     }
-
+//COMENTARIO SHIDO
 
     public void enviarRegistro(){
         new Thread(new Runnable() {

@@ -1,46 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Registro"
-        android:id="@+id/rTitulo"
-        android:layout_marginTop="73dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:textSize="@dimen/abc_select_dialog_padding_start_material" />
+    android:layout_height="match_parent"
+    android:background="#8c6239">
 
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
         android:inputType="textPersonName"
-        android:text="@string/rUsuario"
         android:ems="10"
         android:id="@+id/rNombre"
-        android:layout_marginTop="45dp"
-        android:layout_below="@+id/rTitulo"
-        android:layout_centerHorizontal="true" />
+        android:hint="Nombre de Usuario"
+        android:background="@drawable/contenedor"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:padding="10dp"
+        android:layout_above="@+id/rPass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:id="@+id/aceptar"
+        android:layout_marginBottom="61dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/registrarsebtn" />
 
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
         android:inputType="textPassword"
         android:ems="10"
         android:id="@+id/rPass"
-        android:text="@string/rPass"
-        android:layout_below="@+id/rNombre"
-        android:layout_centerHorizontal="true" />
+        android:background="@drawable/contenedor"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:padding="10dp"
+        android:hint="Contraseña"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/rNombre"
+        android:layout_marginBottom="20dp" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/aceptar"
-        android:id="@+id/aceptar"
-        android:layout_marginTop="53dp"
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/rPassDos"
+        android:background="@drawable/contenedor"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:padding="10dp"
+        android:hint="Repetir Contraseña"
         android:layout_below="@+id/rPass"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignStart="@+id/rPass" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:src="@drawable/logo" />
 
 </RelativeLayout>

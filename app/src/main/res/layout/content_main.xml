@@ -68,4 +68,12 @@
         android:singleLine="false"
         android:focusableInTouchMode="false" />
 
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/logo"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/ingresar" />
+
 </RelativeLayout>

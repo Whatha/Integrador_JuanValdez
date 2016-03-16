@@ -1,35 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#8c6239">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Bienvenido"
-        android:textSize="@dimen/titulos"
-        android:id="@+id/welcome"
+        android:text="Bienvenido:"
+        android:id="@+id/textView"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:padding="10dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="55dp" />
+        android:layout_toStartOf="@+id/textView2" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/iUsuario"
-        android:id="@+id/iUsuario"
-        android:layout_marginTop="62dp"
-        android:layout_below="@+id/welcome"
+        android:text="usuario"
+        android:id="@+id/textView2"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:padding="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/cafe" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView3"
+        android:src="@drawable/logo"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="27dp" />
+        android:padding="10dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:id="@+id/iNombre"
-        android:layout_alignTop="@+id/iUsuario"
-        android:layout_alignStart="@+id/welcome" />
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:id="@+id/cafe"
+        android:background="@drawable/cafe"
+        android:layout_above="@+id/postres"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:id="@+id/postres"
+        android:background="@drawable/postres"
+        android:layout_marginBottom="30dp"
+        android:layout_above="@+id/imageView3"
+        android:layout_alignStart="@+id/cafe"
+        android:layout_marginTop="20dp" />
 
 </RelativeLayout>

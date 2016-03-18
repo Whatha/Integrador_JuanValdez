@@ -3,6 +3,8 @@ package aga.integrador_juanvaldez;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
 import android.widget.TextView;
 
 /**
@@ -24,7 +26,14 @@ public class Inicio extends Activity {
 
 
 
+    }
+    public void cafe(View v){
+
+        System.out.println("enviado cafe");
 
     }
 
+    public void postres(View v){
+        System.out.println("enviado postres");
+    }
 }

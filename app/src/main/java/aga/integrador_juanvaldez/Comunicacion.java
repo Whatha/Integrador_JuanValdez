@@ -124,6 +124,8 @@ public class Comunicacion extends Observable implements Runnable {
 
     }
 
+
+
     public void recibir() throws IOException {
 
 

@@ -104,39 +104,6 @@ import java.util.Observer;
         }
 
 
-        public class tarea extends AsyncTask<String,Integer,String> {
-
-            @Override
-            protected String doInBackground(String... params) {
-
-                DatagramSocket ds=null;
-                InetAddress ip=null;
-
-                if(ds==null&&ip==null){
-                    try {
-                        ds=new DatagramSocket();
-                        ip=InetAddress.getByName("192.168.0.29");
-                    } catch (SocketException e) {
-                        e.printStackTrace();
-                    } catch (UnknownHostException e) {
-                        e.printStackTrace();
-                    }
-                }
-                byte datos[]=params[0].getBytes();
-
-                DatagramPacket dp=new DatagramPacket(datos,datos.length,ip,5000);
-                try {
-                    ds.send(dp);
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-
-
-                return null;
-            }
-        }
-
-
 
 
         /**

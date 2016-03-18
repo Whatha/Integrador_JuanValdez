@@ -12,6 +12,7 @@ import java.net.DatagramSocket;
 import java.net.InetAddress;
 import java.util.Observable;
 
+import comun.Producto;
 import comun.Registro;
 
 /**
@@ -113,6 +114,22 @@ public class Comunicacion extends Observable implements Runnable {
         if(socket!=null){
             Registro r= new Registro(nombre,pass,estado);
             byte[]datos=seralizar(r);
+            DatagramPacket dp=new DatagramPacket(datos,datos.length,ip,port);
+
+            try {
+                socket.send(dp);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+    }
+
+    public void enviar(String tipo,String [] producto,int [] cantidad){
+
+        if(socket!=null){
+            Producto p= new Producto(tipo,producto,cantidad);
+            byte[]datos=seralizar(p);
             DatagramPacket dp=new DatagramPacket(datos,datos.length,ip,port);
 
             try {

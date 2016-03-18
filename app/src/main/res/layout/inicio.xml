@@ -13,13 +13,13 @@
         android:textSize="30dp"
         android:padding="10dp"
         android:layout_alignParentTop="true"
-        android:layout_toStartOf="@+id/textView2" />
+        android:layout_toStartOf="@+id/iNombre" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="usuario"
-        android:id="@+id/textView2"
+        android:id="@+id/iNombre"
         android:textColor="#ffffff"
         android:textSize="30dp"
         android:padding="10dp"
@@ -42,7 +42,8 @@
         android:background="@drawable/cafe"
         android:layout_above="@+id/postres"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="20dp" />
+        android:layout_marginBottom="20dp"
+        android:onClick="cafe" />
 
     <Button
         android:layout_width="250dp"
@@ -52,6 +53,7 @@
         android:layout_marginBottom="30dp"
         android:layout_above="@+id/imageView3"
         android:layout_alignStart="@+id/cafe"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="20dp"
+        android:onClick="postres" />
 
 </RelativeLayout>

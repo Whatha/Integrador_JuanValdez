@@ -28,12 +28,15 @@ public class Inicio extends Activity {
 
     }
     public void cafe(View v){
-
-        System.out.println("enviado cafe");
+        Intent intent = new Intent(Inicio.this, Cafe.class);
+        startActivity(intent);
 
     }
 
     public void postres(View v){
-        System.out.println("enviado postres");
+
+        Intent intent = new Intent(Inicio.this, Postres.class);
+        startActivity(intent);
+
     }
 }

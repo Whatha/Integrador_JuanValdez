@@ -39,23 +39,9 @@
         android:textSize="18dp"
         android:padding="10dp"
         android:hint="Contraseña"
-        android:layout_centerVertical="true"
-        android:layout_alignStart="@+id/rNombre"
-        android:layout_marginBottom="20dp" />
-
-    <EditText
-        android:layout_width="320dp"
-        android:layout_height="50dp"
-        android:inputType="textPassword"
-        android:ems="10"
-        android:id="@+id/rPassDos"
-        android:background="@drawable/contenedor"
-        android:textColor="#ffffff"
-        android:textSize="18dp"
-        android:padding="10dp"
-        android:hint="Repetir Contraseña"
-        android:layout_below="@+id/rPass"
-        android:layout_alignStart="@+id/rPass" />
+        android:layout_marginBottom="69dp"
+        android:layout_above="@+id/aceptar"
+        android:layout_alignStart="@+id/rNombre" />
 
     <ImageView
         android:layout_width="200dp"
